@@ -1,0 +1,10 @@
+@import '../../../../styles.scss';
+
+.buttonRectangle {
+    background-color: $color-dark-pink;
+    color: $color-white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 1px;
+    justify-content: center;
+}

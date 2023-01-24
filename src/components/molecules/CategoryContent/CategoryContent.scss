@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+
+@media screen and (min-width:$tablet) {
+  .contentHeader{
+    margin-left: 24px;
+  }
+
+  .contentText{
+    margin-left: 25px;
+  }
+
+}
+
+@media screen and (min-width: $desktop) {
+  .contentHeader{
+    margin-left: 462px;
+    margin-right: 245px;
+  }
+
+  .contentText{
+    margin-left: 412px;
+  }
+  .buttonStyling{
+    margin-left: 450px;
+    width: 250px;
+  }
+
+ 
+}

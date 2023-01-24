@@ -1,0 +1,18 @@
+input{
+    padding: 0.3em 0;
+    display: block;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid rgb(173,168,165);
+    outline: 0;
+    
+    margin-bottom: 0.75em;
+    &:hover{
+        border: none;
+        border-bottom: 1px solid rgb(127,208,210);
+    }
+    &:focus{
+        padding: 0.6em ;
+    }
+
+}

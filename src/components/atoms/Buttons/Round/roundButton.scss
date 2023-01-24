@@ -1,0 +1,11 @@
+@import '../../../../styles.scss';
+
+.roundButton {
+    background-color: $color-dark-pink;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 50%;
+    padding:  0.3rem;
+}

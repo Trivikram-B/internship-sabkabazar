@@ -1,0 +1,160 @@
+@import '../../../styles.scss';
+
+
+@mixin headerBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: $color-black;
+    font-size: large;
+    width: 100%;
+    padding-right: -40px;
+
+    align-items: right;
+}
+
+@mixin header {
+    width: 98%;
+    box-shadow: 0px 0px 10px 0px lightgray;
+    overflow-x: hidden;
+    height: 80px;
+    overflow: hidden;
+}
+
+@mixin cartImage {
+    background-color: lightgray;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: auto
+}
+
+@mixin cartDiv {
+    background-color: lightgray;
+    display: flex;
+    padding: 5px 18px 15px 1px;
+}
+.userEmail{
+    display: none;
+}
+
+
+.headerBody{
+    width: 100%;
+}
+.header {
+    @include header();
+}
+
+.headerBox {
+    @include headerBox()
+}
+
+.logoMain {
+    height: 4rem;
+}
+
+.linkNav {
+    text-decoration: none;
+    margin: 0 0 0 1.2rem;
+    color: $color-black;
+    padding-top: 50px;
+}
+
+.itemCount {
+    padding-top: 30px;
+}
+
+.cartDiv {
+    @include cartDiv();
+}
+
+.headerNav {
+    padding-bottom: 0px;
+}
+
+.headerNav,
+.headerNavLogin {
+    display: none;
+}
+
+.cartImage {
+    @include cartImage();
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        @include header();
+    }
+
+    .headerBox {
+        @include headerBox()
+    }
+
+    .cartImage {
+        @include cartImage()
+    }
+
+    .cartDiv {
+        @include cartDiv();
+    }
+
+    .headerNav {
+        display: flex;
+        flex-grow: 1;
+        align-items: right;
+    }
+
+    .itemCount {
+        padding-top: 15px;
+    }
+
+    .headerNavLogin {
+        display: inline-block;
+        padding-right: 0rem;
+        margin-left: 0.5rem;
+    }
+
+    .headerNavWrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 0px;
+        align-items: flex-end;
+    }
+
+}
+
+.headerBox {
+    @include headerBox();
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .headerBox {
+        @include headerBox();
+    }
+
+    .cartImage {
+        @include cartImage()
+    }
+
+    .cartDiv {
+        @include cartDiv();
+    }
+
+    .headerNavWrapper {
+
+        width: 90%;
+
+    }
+    .userEmail{
+        display: block;
+        justify-content: right;
+        position: relative;
+        left: 50%;
+        margin-top: 30px;
+    }
+}

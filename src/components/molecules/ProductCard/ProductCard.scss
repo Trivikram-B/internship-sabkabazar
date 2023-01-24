@@ -1,0 +1,134 @@
+@import "../../../styles.scss";
+
+.productCard {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(240, 235, 240, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(240, 235, 240, 1);
+  box-shadow: 10px 10px 5px 0px rgba(240, 235, 240, 1);
+  border-bottom: 1px dotted $color-grey;
+}
+
+.title {
+  height:60px;
+  font-size: $font-size-heading;
+}
+
+.cardSubSection {
+  display: none;
+}
+
+.cartButtonStyle {
+  display: block;
+  border-radius: 2.2px;
+  text-decoration: none;
+  padding: 0.8rem;
+  width: 85%;
+  margin-left: 87px;
+  .buttonRectangle {
+    width: calc(100% - 67px);
+  }
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.imageDescriptionContainer {
+  display: flex;
+}
+
+.productImages {
+  height: 100%;
+  width: 100px;
+  max-height: 400px;
+  object-fit: contain;
+  align-items: center;
+}
+
+.productDescription {
+  margin: 1rem 0;
+  padding: 5px 5px;
+  background-color: $color-light-grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 4.5rem;
+  width: 90%;
+}
+
+@media (min-width: $tablet) {
+  .imageDescriptionContainer {
+    display: flex;
+  }
+
+  .productImages {
+    height: 100%;
+    width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    align-items: center;
+  }
+
+  .productDescription {
+    margin: 1rem 0;
+    padding: 5px 5px;
+    background-color: $color-light-grey;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 4.5rem;
+    width: 90%;
+  }
+  .cartButtonStyle {
+    width: 90%;
+    margin-left: 0px;
+    .buttonRectangle {
+      width: 100%;
+      margin-right: 25px;
+    }
+  }
+  
+}
+
+@media (min-width: $desktop) {
+  .cardSubSectionMobileAndTablet {
+    display: none;
+  }
+  .productImages {
+    width: 90%;
+    height: 90%;
+    width: 150px;
+    max-height: 200px;
+    object-fit: contain;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .productDescription {
+    margin: 1rem 0;
+    padding: 5px 5px;
+    background-color: $color-light-grey;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 4.5rem;
+    width: 90%;
+  }
+
+  .imageDescriptionContainer {
+    display: block;
+  }
+
+  .cardSubSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cartButtonStyle {
+    width: 90%;
+    margin-left: 0px;
+    .buttonRectangle {
+      width: 90%;
+      margin-right: 25px;
+    }
+  }
+  .title {
+    height:90px;
+    font-size: $font-size-heading;
+  }
+}

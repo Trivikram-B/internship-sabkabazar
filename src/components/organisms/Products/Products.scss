@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+.noProducts{
+    // display: none
+    width: 350px;
+    height: auto;
+}
+@media(min-width: $desktop) {
+    .noProducts{
+        width: 800px;
+        height: auto;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+}

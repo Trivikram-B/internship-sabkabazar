@@ -1,0 +1,24 @@
+.CarauselWrapper{
+    padding: 15px;
+
+		img {
+			height: 250px;
+		}
+
+}
+
+.carousel .thumbs {
+    display: none;
+}
+
+.carousel.carousel-slider {
+	.control-arrow {
+		top: 15px;
+		color: #fff;
+		font-size: 26px;
+		left: auto;
+		bottom: 0;
+		margin-top: 0;
+		padding: 15px;
+	}
+}

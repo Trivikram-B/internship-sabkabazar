@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+.sideBar {
+    background-color:$color-light-grey;
+    margin-left: 0.5rem;
+}
+
+.categorySorting {
+    text-decoration: none;
+    color:$color-grey;
+}
+
+.categoryList {
+    border-bottom: 1px solid $color-grey;
+    padding: 12px;
+    background-color: $color-light-grey;
+    text-align: left;
+    border-radius: 0;    
+}
+
+.sideBar :hover{
+    color:$color-white; 
+    background-color: $color-grey;  
+}
+

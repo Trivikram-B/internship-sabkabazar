@@ -1,0 +1,22 @@
+.input-item{
+    color: rgb(173,168,165);
+
+    &:focus-within{
+        color: rgb(127,208,210);
+        .input{
+         border-bottom: 1px solid rgb(127,208,210);
+
+        }
+     }
+}
+.form-error {
+    color: red;
+    height: 2em;
+    margin-bottom: 0.6em;
+    margin-top: 0.1em;
+  }
+    
+  .error-icon{
+    //   margin-top: -4px;
+      margin-bottom: 4px;
+  }

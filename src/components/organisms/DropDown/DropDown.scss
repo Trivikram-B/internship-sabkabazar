@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+.dropDown
+{
+    justify-content: space-between;
+    border: none;
+    color: $color-white;
+    background-color: $color-dark-pink;
+    padding: 5px;
+    width:100%;
+}

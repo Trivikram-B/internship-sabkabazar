@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+
+.cartFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footerText {
+  font-size: 0.8rem;
+  color: $color-black;
+}
+
+.footerButton {
+  width: 95%;
+}
+
+.buttonRectangle {
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0.7rem 0.5rem !important;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .footerButton {
+    width: 104%;
+  }
+
+  .buttonRectangle {
+    padding: 0.5rem;
+  }
+}

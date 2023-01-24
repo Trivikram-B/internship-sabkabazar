@@ -1,0 +1,56 @@
+@import '../../../styles.scss';
+.listingProducts{
+    width: 100%;
+}
+.cardSection{
+    flex: 1 1;
+    display: grid;
+    grid-gap: 2rem;
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+}
+.sideBar{
+    display:none;
+}
+
+@media(min-width: $tablet){
+    .sideBar{
+        display:block;
+    }
+    .dropDown{
+        display:none;
+    }
+    .cardSection{
+        flex: 1 1;
+        display: grid;
+        grid-gap: 2rem;
+        padding: 1.5rem;
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+    .listingProducts{
+        display: flex;
+    }
+    
+}
+@media(min-width: $desktop) {
+    .sideBar{
+        display:block;
+    }
+    .dropDown{
+        display:none;
+    }
+    .cardSection{
+        flex: 1 1;
+        display: grid;
+        grid-gap: 2rem;
+        padding: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    
+    .listingProducts{
+        display: flex;
+    }
+    }
+
+

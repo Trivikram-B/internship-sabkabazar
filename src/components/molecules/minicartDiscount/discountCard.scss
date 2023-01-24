@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+.cardDiscount {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+}
+
+.cardText {
+    font-size: .8rem;
+    padding-left: 0.5rem;
+    color: #4d4d4d;
+}
+
+@media screen and (min-width: 481px){
+.cardDiscount {
+    padding: 0.5rem 1rem;
+}
+}

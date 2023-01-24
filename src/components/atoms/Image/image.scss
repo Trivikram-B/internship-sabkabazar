@@ -1,0 +1,12 @@
+.image-wrapper{
+  width: 100px;
+  height: 75px;
+}
+
+@media  screen and (min-width:1024px) {
+  .image-wrapper{
+    width: 260px;
+    height: 150px;
+  }
+}
+

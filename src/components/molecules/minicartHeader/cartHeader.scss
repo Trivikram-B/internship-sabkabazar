@@ -1,0 +1,32 @@
+@import "../../../styles.scss";
+
+.cartHeader {
+  display: flex;
+  background-color: $color-black;
+  justify-content: space-between;
+}
+
+.headerLabel {
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  color: $color-white;
+}
+
+.closeButton {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .cartHeader {
+    background-color: $color-white;
+  }
+
+  .closeButton {
+    display: none;
+  }
+
+  .headerLabel {
+    color: $color-black;
+  }
+}
